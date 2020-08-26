@@ -1,9 +1,12 @@
-<?php session_start();  ?>
+<?php 
+header("Content-Type: text/html; charset=utf-8");
+require ("data/mysql.inc");
+session_start();  ?>
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-    <title>Визуализатор когнитивных карт</title>
-		<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+    <title>Р’РёР·СѓР°Р»РёР·Р°С‚РѕСЂ РєРѕРіРЅРёС‚РёРІРЅС‹С… РєР°СЂС‚</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />  
 		<meta name="keywords" content="" />  
      
@@ -21,13 +24,13 @@
 
 
 <script>
-	// Для поля ввода данных
+	// Р”Р»СЏ РїРѕР»СЏ РІРІРѕРґР° РґР°РЅРЅС‹С…
 jQuery(function($){
 		   
 	$('#login').submit(function(){
 		
 		var valid = true;
-		var errormsg = 'Эти поля обязательны к заполнению!';
+		var errormsg = 'Р­С‚Рё РїРѕР»СЏ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹ Рє Р·Р°РїРѕР»РЅРµРЅРёСЋ!';
 		var errorcn = 'error';
 		
 		$('.' + errorcn, this).remove();			
@@ -57,7 +60,7 @@ jQuery(function($){
 
 				<nav id="nav">
 					<ul>
-						<li><a href="help.php">Помощь</a></li>
+						<li><a href="help.php">РџРѕРјРѕС‰СЊ</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -67,24 +70,24 @@ jQuery(function($){
 
 				<h2> <img src="images/logo.png" /> 
 			
-				Визуализатор когнитивных карт</h2>
-				<p>Вход для преподавателей</p>
-    <!-- Вход для преподавателей -->   
+				Р’РёР·СѓР°Р»РёР·Р°С‚РѕСЂ РєРѕРіРЅРёС‚РёРІРЅС‹С… РєР°СЂС‚</h2>
+				<p>Р’С…РѕРґ РґР»СЏ РїСЂРµРїРѕРґР°РІР°С‚РµР»РµР№</p>
+    <!-- Р’С…РѕРґ РґР»СЏ РїСЂРµРїРѕРґР°РІР°С‚РµР»РµР№ -->   
 		<form id="login" method="post" action="auth.php"> 
 
 
     <div>
-    	<label for="login_username">Логин</label> 
-    	<input type="text" name="login" id="login_username" class="field required" title="Пожалуйста, введите свой логин!" />
+    	<label for="login_username">Р›РѕРіРёРЅ</label> 
+    	<input type="text" name="login" id="login_username" class="field required" title="РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРІРµРґРёС‚Рµ СЃРІРѕР№ Р»РѕРіРёРЅ!" />
     </div>			
 
     <div>
-    	<label for="login_password">Пароль</label>
-    	<input type="password" name="password" id="login_password" class="field required" title="Пожалуйста, введите свой пароль!" />
+    	<label for="login_password">РџР°СЂРѕР»СЊ</label>
+    	<input type="password" name="password" id="login_password" class="field required" title="РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРІРµРґРёС‚Рµ СЃРІРѕР№ РїР°СЂРѕР»СЊ!" />
     </div>	
     
    <div class="submit">
-        <button type="submit">Вход</button>   
+        <button type="submit">Р’С…РѕРґ</button>   
    </div>
   </form>	
   
@@ -104,11 +107,11 @@ if(!empty($_SESSION['log_error']))
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="copyright">
-					<li><a href="instruction.php">Инструкция</a></li>
-					<li><a href="elements.php">Дисциплины</a></li>
-					<li><a href="contact.php">Контакты</a></li>
+					<li><a href="instruction.php">РРЅСЃС‚СЂСѓРєС†РёСЏ</a></li>
+					<li><a href="elements.php">Р”РёСЃС†РёРїР»РёРЅС‹</a></li>
+					<li><a href="contact.php">РљРѕРЅС‚Р°РєС‚С‹</a></li>
 				</ul>
-			<p>	2015 &copy; Грушина Татьяна</p>
+			<p>	2015 &copy; Р“СЂСѓС€РёРЅР° РўР°С‚СЊСЏРЅР°</p>
 		    </footer>
 
 	</body>

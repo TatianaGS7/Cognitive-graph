@@ -1,6 +1,6 @@
 <?php header("Content-Type: text/html; charset=charset=utf-8");
  
-$adminemail="admin@mail.ru";  // e-mail   
+$adminemail="admin@mail.ru";  // e-mail Â  
  
  
 $date=date("d.m.y"); 
@@ -21,24 +21,24 @@ $msg=$_POST['message'];
 
 $msg=" 
  
-Èìÿ: $name
+Ð˜Ð¼Ñ: $name
   
 E-mail: $email
  
-Òåìà : $sub
+Ð¢ÐµÐ¼Ð°Â : $sub
 
-Ñîîáùåíèå: $msg
+Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ: $msg 
  
  "; 
  
   
-mail("$adminemail", "$date $time Ñîîáùåíèå îò $name", "$email", "$sub", "$msg"); 
+mail("$adminemail", "$date $time Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¾Ñ‚ $name", "$email", "$sub", "$msg"); 
  
   
  
 $f = fopen("message.txt", "a+"); 
  
-fwrite($f," \n $date $time Ñîîáùåíèå îò $name");
+fwrite($f," \n $date $time Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¾Ñ‚ $name");
  
 fwrite($f,"\n $msg "); 
  

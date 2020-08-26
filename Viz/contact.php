@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-    <title>Контакты</title>
+    <title>РљРѕРЅС‚Р°РєС‚С‹</title>
 		<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -20,13 +20,13 @@
 		</noscript>
 
 <script>
-	// Для поля ввода данных
+	// Р”Р»СЏ РїРѕР»СЏ РІРІРѕРґР° РґР°РЅРЅС‹С…
 jQuery(function($){
 		   
 	$('#send').submit(function(){
 		
 		var valid = true;
-		var errormsg = 'Эти поля обязательны к заполнению!';
+		var errormsg = 'Р­С‚Рё РїРѕР»СЏ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹ Рє Р·Р°РїРѕР»РЅРµРЅРёСЋ!';
 		var errorcn = 'error';
 		
 		$('.' + errorcn, this).remove();			
@@ -57,10 +57,10 @@ jQuery(function($){
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
-			<h1> <img src="images/logo.png"  height="50%" /> Визуализатор когнитивных карт</h1>
+			<h1> <img src="images/logo.png"  height="50%" /> Р’РёР·СѓР°Р»РёР·Р°С‚РѕСЂ РєРѕРіРЅРёС‚РёРІРЅС‹С… РєР°СЂС‚</h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.php">Главная</a></li>
+						<li><a href="index.php">Р“Р»Р°РІРЅР°СЏ</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -68,33 +68,33 @@ jQuery(function($){
 		<!-- Main -->
 			<section id="main" class="container 75%">
 				<header>
-					<h2>Связаться с нами</h2>
-					<p>Если у Вас возникли затруднения, Вы можете нам письмо </p>
+					<h2>РЎРІСЏР·Р°С‚СЊСЃСЏ СЃ РЅР°РјРё</h2>
+					<p>Р•СЃР»Рё Сѓ Р’Р°СЃ РІРѕР·РЅРёРєР»Рё Р·Р°С‚СЂСѓРґРЅРµРЅРёСЏ, Р’С‹ РјРѕР¶РµС‚Рµ РЅР°Рј РїРёСЃСЊРјРѕ </p>
 				</header>
 				<div class="box">
 					<form id="send" method="post" action="post.php">
 						<div class="row uniform 50%">
 							<div class="6u 12u(mobilep)">
-								<input type="text" name="name" id="name" value="" placeholder="Имя" class="field required" title="Пожалуйста, введите имя!" />
+								<input type="text" name="name" id="name" value="" placeholder="РРјСЏ" class="field required" title="РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРІРµРґРёС‚Рµ РёРјСЏ!" />
 							</div>
 							<div class="6u 12u(mobilep)">
-								<input type="email" name="email" id="email" value="" placeholder="Email" class="field required" title="Пожалуйста, введите e-mail!" />
+								<input type="email" name="email" id="email" value="" placeholder="Email" class="field required" title="РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРІРµРґРёС‚Рµ e-mail!" />
 							</div>
 						</div>
 						<div class="row uniform 50%">
 							<div class="12u">
-								<input type="text" name="subject" id="subject" value="" placeholder="Тема" />
+								<input type="text" name="subject" id="subject" value="" placeholder="РўРµРјР°" />
 							</div>
 						</div>
 						<div class="row uniform 50%">
 							<div class="12u">
-								<textarea name="message" id="message" placeholder="Текст Вашего письма" rows="6" class="field required" title="Пожалуйста, введите текст сообщения!"></textarea>
+								<textarea name="message" id="message" placeholder="РўРµРєСЃС‚ Р’Р°С€РµРіРѕ РїРёСЃСЊРјР°" rows="6" class="field required" title="РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРІРµРґРёС‚Рµ С‚РµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ!"></textarea>
 							</div>
 						</div>
 						<div class="row uniform">
 							<div class="12u">
 								<ul class="actions align-center">
-									<li><input type="submit" value="Отправить сообщение" /></li>
+									<li><input type="submit" value="РћС‚РїСЂР°РІРёС‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ" /></li>
 								</ul>
 							</div>
 						</div>
@@ -105,11 +105,11 @@ jQuery(function($){
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="copyright">
-					<li><a href="instruction.php">Инструкция</a></li>
-					<li><a href="elements.php">Дисциплины</a></li>
-					<li><a href="contact.php">Контакты</a></li>
+					<li><a href="instruction.php">РРЅСЃС‚СЂСѓРєС†РёСЏ</a></li>
+					<li><a href="elements.php">Р”РёСЃС†РёРїР»РёРЅС‹</a></li>
+					<li><a href="contact.php">РљРѕРЅС‚Р°РєС‚С‹</a></li>
 				</ul>
-			<p>	2015 &copy; Грушина Татьяна </p>
+			<p>	2015 &copy; Р“СЂСѓС€РёРЅР° РўР°С‚СЊСЏРЅР° </p>
 		    </footer>
 
 	</body>
